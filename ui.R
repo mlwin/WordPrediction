@@ -8,7 +8,7 @@ shinyUI(fluidPage(
     sidebarPanel(
       helpText("Please enter text"),
       
-      textInput("symb1", "Stock 1", "XLI"),
+      textInput("textEntry", "Input Text", ""),
       
 
       br(),
@@ -22,3 +22,10 @@ shinyUI(fluidPage(
   )  
 ))
 
+# library(shiny)
+# setwd("C:/NLP/")
+# runApp("ShinyApp")
+
+# setwd("C:/NLP/ShinyApp")
+# library(shinyapps)
+# deployApp()
