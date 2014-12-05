@@ -1,0 +1,34 @@
+Word Prediction
+========================================================
+author: kojava@yahoo.com
+date: December, 2014
+transition: linear
+Data Science Specialization Capstone Project
+
+
+
+Introduction
+========================================================
+
+- The goal is to develop a natural language processing engine based on a predictive model using English language text fragments and words.
+- As a user enters one or more words, the predictive model should be able to predict the next word that the user is going to enter.
+- Data set used in the predictive model consists of unstructured large text databases from blogs, news and twitter in English language.
+
+
+Prediction Model
+========================================================
+
+- Due to memory constraints 5% of data is sampled to buid the model.
+- Transformations include removing numbers, punctuation, profanities, changing to lowercase and eliminate words with frequency count of less than 3.
+- ddd
+
+Shiny Application
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+
+Conclusion
+========================================================
