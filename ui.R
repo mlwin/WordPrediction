@@ -6,21 +6,26 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      helpText("Please enter text"),
+
       
-      textInput("textEntry", "Input Text", ""),
+      textInput("textEntry", "Please enter text:", ""),
       
 
-      br(),
-      
-      actionButton("get", "Submit")
+      br()
       
       
     ),
     
-    mainPanel(verbatimTextOutput("text1"))
+    mainPanel(h4("Predicted word:"), verbatimTextOutput("text1"))
+    
+    #fluidRow(
+    #     column(3, wellPanel(
+    #     h4("Predicted word:"),
+    #     verbatimTextOutput("text1")
+    #  ))
   )  
 ))
+
 
 # library(shiny)
 # setwd("C:/NLP/")
@@ -29,3 +34,4 @@ shinyUI(fluidPage(
 # setwd("C:/NLP/ShinyApp")
 # library(shinyapps)
 # deployApp()
+
