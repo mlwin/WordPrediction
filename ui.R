@@ -2,13 +2,12 @@ library(shiny)
 
 
 shinyUI(fluidPage(
-  titlePanel("Word Prediction"),
+  titlePanel("Word Prediction - Data Science Specialization Capstone Project"),
   
   sidebarLayout(
     sidebarPanel(
-
       
-      textInput("textEntry", "Please enter text:", ""),
+      textInput("textEntry", "Loading data...please wait!", ""),
       
 
       br()
@@ -16,22 +15,13 @@ shinyUI(fluidPage(
       
     ),
     
-    mainPanel(h4("Predicted word:"), verbatimTextOutput("text1"))
-    
-    #fluidRow(
-    #     column(3, wellPanel(
-    #     h4("Predicted word:"),
-    #     verbatimTextOutput("text1")
-    #  ))
+    mainPanel(
+              h4("Predicted word:"), 
+              verbatimTextOutput("text1"), 
+              tags$head(tags$style("#text1{color: blue;font-size: 20px;font-style: normal;}")),
+              h5("Additonal Suggestion(s)"),
+              verbatimTextOutput("text2"))
+                        
   )  
 ))
-
-
-# library(shiny)
-# setwd("C:/NLP/")
-# runApp("ShinyApp")
-
-# setwd("C:/NLP/ShinyApp")
-# library(shinyapps)
-# deployApp()
 
